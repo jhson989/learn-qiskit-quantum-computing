@@ -8,7 +8,7 @@ circuit.h(1)
 circuit.h(3)
 
 circuit.measure([0, 1, 2, 3], [0, 1, 2, 3])
-circuit.draw()
+circuit.draw(output='mpl', style={'backgroundcolor': '#EEEEEE'}).show()
 
 backend = Aer.get_backend('qasm_simulator')
 results = execute(circuit, backend).result()
